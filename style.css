@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #141e30, #243b55);
+  color: #fff;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.navbar a:hover {
+  color: #00f2ff;
+}
+
+/* Glass Container */
+.glass {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+  border-radius: 25px;
+}
+
+/* Headings */
+#hero-title {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero-text {
+  opacity: 0.85;
+  margin-bottom: 40px;
+}
+
+/* Images */
+.hero-image {
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+/* Destination Cards */
+.destinations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 15px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 18px;
+  transition: transform 0.4s;
+}
+
+.gallery img:hover {
+  transform: scale(1.08);
+}
